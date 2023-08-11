@@ -6,7 +6,7 @@ function getComputerChoice() {
   } else if (random === 1) {
     const cInput = "PAPER";
     return cInput;
-  } else {
+  } else if (random === 2) {
     const cInput = "SCISSORS";
     return cInput;
   }
@@ -38,4 +38,5 @@ function playRound(playerSelection, computerSelection) {
 const playerSelection = getUserChoice();
 const computerSelection = getComputerChoice();
 
+console.log(computerSelection);
 console.log(playRound(playerSelection, computerSelection));
